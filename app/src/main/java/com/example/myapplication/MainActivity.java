@@ -24,11 +24,11 @@ public class MainActivity extends AppCompatActivity {
        txtview=(TextView) findViewById(R.id.txtview);
        edittxt=(EditText) findViewById(R.id.edittxt);
 
-
         button=(Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Log.d("button",edittxt.getText().toString());
+                nameInput= edittxt.getText().toString();
+                Log.d("button",nameInput);
                 txtview.setText(edittxt.getText().toString());
             }
         });
