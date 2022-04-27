@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 nameInput= edittxt.getText().toString();
                 Log.d("button",nameInput);
-                txtview.setText(edittxt.getText().toString());
+                txtview.setText(nameInput);
             }
         });
     }
